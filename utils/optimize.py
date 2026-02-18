@@ -205,7 +205,7 @@ class Optimizer:
             rgbs=None,
     ):
         if target.shape[-1] != img.shape[-1]:
-            visual = make_grid(img, nrow=1, normalize=True
+            visual = make_grid(img, nrow=1, normalize=True)
             writer.add_image("pred", visual, niters)
 
         def resize(img):
